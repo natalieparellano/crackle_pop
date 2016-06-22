@@ -5,6 +5,9 @@ describe CracklePop do
     it "accepts an array as argument" do 
       expect{ CracklePop.print( [1,2,3] ) }.to output.to_stdout
     end
+    it "accepts an array as argument" do 
+      expect{ CracklePop.print( (1..100) ) }.to output.to_stdout
+    end
   end
 
   describe ".format" do 
